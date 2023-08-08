@@ -1,0 +1,52 @@
+[
+    {
+        "usuario": "usuario1",
+        "contrasena": "pass1234",
+        "saldo": 1500.0
+    },
+    {
+        "usuario": "usuario2",
+        "contrasena": "secure01",
+        "saldo": 2200.0
+    },
+    {
+        "usuario": "usuario3",
+        "contrasena": "money789",
+        "saldo": 3200.0
+    },
+    {
+        "usuario": "usuario4",
+        "contrasena": "hello456",
+        "saldo": 1000.0
+    },
+    {
+        "usuario": "usuario5",
+        "contrasena": "world567",
+        "saldo": 2800.0
+    },
+    {
+        "usuario": "usuario6",
+        "contrasena": "welcome9",
+        "saldo": 500.0
+    },
+    {
+        "usuario": "usuario7",
+        "contrasena": "python55",
+        "saldo": 1800.0
+    },
+    {
+        "usuario": "usuario8",
+        "contrasena": "webdev22",
+        "saldo": 3500.0
+    },
+    {
+        "usuario": "usuario9",
+        "contrasena": "passw123",
+        "saldo": 4200.0
+    },
+    {
+        "usuario": "usuario10",
+        "contrasena": "secure22",
+        "saldo": 2000.0
+    }
+]

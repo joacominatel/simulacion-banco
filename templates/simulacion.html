@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simulación Entidad Financiera - Simulación</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenido, {{ usuario }}</h1>
+        <p>Saldo actual: ${{ saldo_actual }}</p>
+
+        <div class="acciones">
+            <h2>Acciones</h2>
+            <form method="POST">
+                <input type="hidden" name="usuario" value="{{ usuario }}">
+                <label for="accion">Selecciona una acción:</label>
+                <select id="accion" name="accion" required>
+                    <option value="ingresar">Ingresar Dinero</option>
+                    <option value="transferir">Transferir Dinero</option>
+                    <option value="pedir">Pedir Dinero</option>
+                </select><br>
+        
+                <label for="monto">Monto:</label>
+                <input type="number" id="monto" name="monto" step="0.01" required><br>
+        
+                {% if accion in ['transferir', 'pedir'] %}
+                    <label for="destinatario">Destinatario:</label>
+                    <input type="text" id="destinatario" name="destinatario"><br>
+                {% endif %}
+        
+                <input type="submit" value="Realizar Acción">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
